@@ -4,6 +4,8 @@
  */
 package com.mycompany.productcustomer;
 
+import java.sql.ResultSet;
+
 /**
  *
  * @author DELL
@@ -23,6 +25,14 @@ class PreparedStatement {
     }
 
     void setDouble(int i, double price) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    ResultSet executeQuery() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    void close() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     

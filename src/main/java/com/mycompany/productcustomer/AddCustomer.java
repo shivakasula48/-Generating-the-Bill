@@ -51,6 +51,7 @@ public class AddCustomer extends javax.swing.JFrame {
         txtAddress = new javax.swing.JTextArea();
         btnAddCustomer = new javax.swing.JButton();
         btnClearCustomerForm = new javax.swing.JButton();
+        btnBack = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -116,6 +117,15 @@ public class AddCustomer extends javax.swing.JFrame {
             }
         });
 
+        btnBack.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(0, 255, 255));
+        btnBack.setText("Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,9 +136,6 @@ public class AddCustomer extends javax.swing.JFrame {
                         .addGap(189, 189, 189)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(84, 84, 84)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -138,7 +145,7 @@ public class AddCustomer extends javax.swing.JFrame {
                             .addComponent(jLabel5)
                             .addComponent(jLabel6)
                             .addComponent(btnAddCustomer))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(42, 42, 42)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -152,9 +159,14 @@ public class AddCustomer extends javax.swing.JFrame {
                                         .addComponent(rbOther))
                                     .addComponent(txtEmail, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(btnClearCustomerForm)))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(btnClearCustomerForm)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnBack))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(36, 36, 36)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -189,7 +201,8 @@ public class AddCustomer extends javax.swing.JFrame {
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddCustomer)
-                    .addComponent(btnClearCustomerForm))
+                    .addComponent(btnClearCustomerForm)
+                    .addComponent(btnBack))
                 .addContainerGap(76, Short.MAX_VALUE))
         );
 
@@ -227,7 +240,7 @@ try {
 
     JOptionPane.showMessageDialog(this, "✅ Customer added successfully!");
     txtCustomerName.setText("");
-    //bgGender.clearSelection(); // This unselects all radio buttons
+     buttonGroup1.clearSelection(); // This unselects all radio buttons
     txtEmail.setText("");
     txtPhone.setText("");
     txtAddress.setText("");
@@ -242,13 +255,20 @@ try {
 
     private void btnClearCustomerFormActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearCustomerFormActionPerformed
 txtCustomerName.setText("");
-    //bgGender.clearSelection();
+     buttonGroup1.clearSelection();
     // This unselects all radio buttons
     txtEmail.setText("");
     txtPhone.setText("");
     txtAddress.setText("");
         // TODO add your handling code here:
     }//GEN-LAST:event_btnClearCustomerFormActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+
+    new AdminHome().setVisible(true);
+    dispose();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -283,6 +303,7 @@ txtCustomerName.setText("");
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddCustomer;
+    private javax.swing.JButton btnBack;
     private javax.swing.JButton btnClearCustomerForm;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
