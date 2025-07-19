@@ -109,7 +109,11 @@ Right-click → Run
 
 ## 📸 Screenshots
 
+!<img width="922" height="914" alt="Image" src="https://github.com/user-attachments/assets/1be4a72b-5c8e-4f60-942b-b76fbd43da8b" />
 
+!<img width="725" height="674" alt="Image" src="https://github.com/user-attachments/assets/8d1a624d-0d78-40e0-8831-c19560165998" />
+
+!<img width="926" height="911" alt="Image" src="https://github.com/user-attachments/assets/7acdfda2-78cd-465d-b021-229ab5506f6a" />
 
 ## 📬 Author
 
