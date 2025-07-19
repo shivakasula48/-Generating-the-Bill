@@ -89,7 +89,7 @@ CREATE TABLE transaction_items (
 
 1.Clone the repository:
 
-```sql
+```bash
 git clone https://github.com/shivakasula48/-Generating-the-Bill.git
 cd Generating-the-Bill
 ```
@@ -106,3 +106,8 @@ cd Generating-the-Bill
 
 Right-click → Run
 ```
+## 📬 Author
+
+**Kasula Shiva**  
+B.Tech CSE (Cybersecurity)  
+[GitHub Profile](https://github.com/shivakasula48)
