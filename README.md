@@ -106,6 +106,11 @@ cd Generating-the-Bill
 
 Right-click → Run
 ```
+
+## 📸 Screenshots
+
+
+
 ## 📬 Author
 
 **Kasula Shiva**  
